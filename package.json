@@ -3,18 +3,30 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "nuxi preview",
+    "test": "jest"
   },
   "dependencies": {
     "core-js": "^3.19.3",
-    "nuxt": "^2.15.8",
+    "nuxt-edge": "latest",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge",
+    "@types/jest": "^27.4.0",
+    "@vue/test-utils": "1.3.0",
+    "@vue/vue2-jest": "^27.0.0-alpha.4",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5"
+  }
 }

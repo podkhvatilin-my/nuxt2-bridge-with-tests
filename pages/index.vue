@@ -1,5 +1,5 @@
 <template>
-  <Tutorial/>
+  <TestComponent />
 </template>
 
 <script>
